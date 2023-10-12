@@ -10,7 +10,7 @@ public class UIController : MonoBehaviour
     public Sprite heartFull, heartEmpty, heartHalf;
 
     public Text gemText;
-    
+
     public Image fadeScreen;
     public float fadeSpeed;
     private bool shouldFadeToBlack, shouldFadeFromBlack;
