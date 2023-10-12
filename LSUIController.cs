@@ -1,3 +1,16 @@
+/*Скрипт для керування інтерфейсом користувача на карті рівня в грі
+
+Start() - викликає FadeFromBlack() для розтемнення екрану на початку гри
+Update() - оновлює затемнення та розтемнення екрану - shouldFadeToBlack та shouldFadeFromBlack.
+FadeToBlack() - встановлює прапорець shouldFadeToBlack, щоб затемнити екран.
+
+FadeFromBlack() - встановлює прапорець shouldFadeFromBlack, щоб розтемнити екран.
+
+ShowInfo(MapPoint levelInfo) - відображає інформацію про рівень на карті - зібрані алмази, ціль, найкращий час, цільовий час
+HideInfo() - ховає панель інформації про рівень
+*/
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
