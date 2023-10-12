@@ -1,3 +1,22 @@
+/*
+
+Цей код створює ворожого персонажа який рухається між двома точками і чекає протягом деякого часу перед повторним рухом(іказано у файлі FlyingEnemyController)
+Важливі змінні:
+public float moveSpeed - швидкість руху
+public Transform leftPoint, rightPoint - точки між якими ворог буде рухається
+private bool movingRight - вказує чи ворог рухається вправо
+private Rigidbody2D theRB - керування фізикою ворога
+public SpriteRenderer theSR - компонент для зміни напрямку ворога
+public float moveTime - час руху ворога між точками
+public float waitTime - час очікування перед наступним рухом
+private float moveCount, waitCount - лічильники часу для руху та очікування
+private Animator anim - компонент анімації ворога
+
+
+*/
+
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
