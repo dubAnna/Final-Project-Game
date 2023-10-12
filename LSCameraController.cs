@@ -1,3 +1,12 @@
+/*Скрипт для керування камерою в грі на карті рівня
+
+LateUpdate() викликається кожен кадр після оновлення позиції всіх інших об'єктів у грі 
+та бчислює нову позицію камери (xPos та yPos) на основі позиції target, тобто гравця, та меж положення камери.
+
+виикористання Mathf.Clamp() для обмеження позиції камери в межах minPos та maxPos
+встановлення нової позиції камери з урахуванням обмежень transform.position = new Vector3(xPos, yPos, transform.position.z).
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
