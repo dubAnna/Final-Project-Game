@@ -1,3 +1,14 @@
+/*Скрипт реалізує взаємодію з гравцем, коли той наближається до міни
+
+Основні методи:
+
+OnTriggerEnter2D(Collider2D other) -  метод викликається коли гравець доторкнувся до міни. 
+--> якщо other має тег "Player", то міна вибухне, знищуючи себе (Destroy(gameObject)).
+---> після цього викликається метод DealDamage() з компонента PlayerHealthController.instance, щоб завдати урон гравцю
+
+Explode() - метод знищує міну, створює об'єкт вибуху та відтворює звук вибуху.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
